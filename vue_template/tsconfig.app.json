@@ -1,0 +1,14 @@
+{
+  "extends": "@vue/tsconfig/tsconfig.dom.json",
+  "include": ["env.d.ts", "src/**/*", "src/**/*.vue","./tailwind.config.js", "src/js/slick.min.js","src/views/oldModel/*.vue"],
+  "exclude": ["src/**/__tests__/*"],
+  "compilerOptions": {
+    "composite": true,
+    "baseUrl": ".",
+    "paths": {
+      "@/*": ["./src/*"],
+      "img/*": ["./src/img/*"]
+    }
+  },
+  "references": [{ "path": "./tsconfig.node.json" }]
+}
