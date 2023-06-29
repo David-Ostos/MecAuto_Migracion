@@ -29,9 +29,9 @@ const router = createRouter({
       component: () => import('../views/oldModel/container/reciente/products.vue')
     },
     {
-      path: '/prueba',
+      path: '/products',
       name: 'prueba',
-      component: () => import('../views/oldModel/container/reciente/prueba.vue')
+      component: () => import('../views/oldModel/container/reciente/productSlider.vue')
     },
     {
       path: '/pruebaS',
