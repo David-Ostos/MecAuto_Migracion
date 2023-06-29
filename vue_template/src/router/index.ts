@@ -3,18 +3,18 @@ import { createRouter, createWebHistory } from 'vue-router';
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
   routes: [
-    {
+/*     {
       path: '/',
       name: 'home',
       component: () => import('../views/home.vue')
-    },
+    }, */
     {
       path: '/old',
       name: 'oldTemplate',
       component: () => import('../views/oldModel/oldMOdel.vue')
     },
     {
-      path: '/nav',
+      path: '/',
       name: 'navBar',
       component: () => import('../views/oldModel/container/navBar.vue')
     },
