@@ -19,11 +19,6 @@ const router = createRouter({
       component: () => import('../views/oldModel/container/navBar.vue')
     },
     {
-      path: '/loader',
-      name: 'loader',
-      component: () => import('../views/oldModel/components/loaderAll.vue')
-    },
-    {
       path: '/products',
       name: 'reciente',
       component: () => import('../views/oldModel/container/reciente/products.vue')
