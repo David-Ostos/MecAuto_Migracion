@@ -1,6 +1,17 @@
 <!-- eslint-disable vue/multi-word-component-names -->
 <template>
-  <h1 class="text-3xl font-bold underline">Hello world!</h1>
-  <h1>Hello world!</h1>
+  <bannerPrincipalVue/>
+  <filtro/>
+  <NavTipo/>
+
 </template>
-<script setup lang="ts"></script>
+<script setup lang="ts">
+import { RouterLink } from 'vue-router';
+import bannerPrincipalVue from './components/bannerPrincipal.vue';
+import filtro from './components/filtro.vue'
+import NavTipo from './components/navTipo.vue';
+
+</script>
+
+<style scoped>
+</style>

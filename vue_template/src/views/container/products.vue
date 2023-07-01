@@ -16,6 +16,13 @@ const props = defineProps({
 
 </script>
 <style lang="scss" scoped>
+
+.container-product{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: fit-content;
+}
 .product:hover {
   box-shadow: 0px 0px 6px 0px #E4E7ED, 0px 0px 0px 2px #0078d4;
 }
@@ -178,6 +185,7 @@ const props = defineProps({
 
 .add-to-cart {
   position: relative;
+  width: 100% ;
   bottom: 70px;
   padding: 15px;
   background: #1e1f29;
@@ -190,7 +198,7 @@ const props = defineProps({
   z-index: 2;
 }
 
-.containeProduct:hover .add-to-cart {
+.container-product:hover .add-to-cart {
   -webkit-transform: translateY(100%);
   -ms-transform: translateY(100%);
   transform: translateY(100%);
@@ -266,7 +274,7 @@ const props = defineProps({
 
 <template>
 
-  <div class="containeProduct">
+  <div class="container-product">
     <div class=" product ">
       <div class=" product-img">
         <img class="img" :src="images" alt="" />

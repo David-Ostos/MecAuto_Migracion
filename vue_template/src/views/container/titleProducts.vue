@@ -1,16 +1,21 @@
 <template>
   <div class="contenedor ">
     <div class="title-product">
-      <h3>Articulos SS Vistos <br />Recientemente</h3>
+      <h3>{{ title }} <br />{{ title2 }}</h3>
     </div>
     <div class="ver-todo">
       <a href="#tab1">Ver Todo</a>
     </div>
   </div>
 </template>
-
+ 
 <script setup lang="ts">
 
+const props = defineProps({
+  title: String,
+  title2: String
+
+})
 
 </script>
 
