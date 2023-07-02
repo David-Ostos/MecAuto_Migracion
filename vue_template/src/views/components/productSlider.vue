@@ -40,7 +40,7 @@ fetch('https://api.escuelajs.co/api/v1/products?offset=0&limit=10')
 <style lang="scss" scoped>
 .contenerdor {
   overflow: scroll;
-  overflow-x: auto;
+  scroll-snap-type: x mandatory;
   width: 100vw;
   box-sizing: border-box;
   max-width: 86vw;
@@ -55,7 +55,5 @@ fetch('https://api.escuelajs.co/api/v1/products?offset=0&limit=10')
   gap: 2rem;
   padding-bottom: 5rem;
   position: relative;
-  overflow: scroll;
-  overflow-x: auto;
 }
 </style>

@@ -243,8 +243,12 @@ const props = defineProps({
 }
 
 @media (max-width: 639px) {
+
+  .product{
+    width: 80vw;
+  }
   .img {
-    height: 60vw;
+    
   }
 
   @media (min-width: 640px) {
