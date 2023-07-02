@@ -92,7 +92,6 @@ header {
     width: 2.5rem;
     /* text-align: center; */
     border-radius: 50%;
-    color: white;
     justify-content: center;
     align-items: center;
   }
@@ -106,13 +105,15 @@ header {
   background-color: #0062ae;
   border-color: #0062ae;
 }
-.btn-primary:active{
+.btn-primary:active {
   background-color: #003e6e;
   border-color: #003e6e;
 }
+
 .btn-secondary {
-  background-color: #ac2bac;
-  border-color: #ac2bac;
+  background-color: white;
+    border-color: white;
+    color: #0078d4;
 }
 </style>
 

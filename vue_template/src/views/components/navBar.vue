@@ -1,30 +1,19 @@
 <template>
-
-  <div class="cerrarNav" id="cerrarNav" >
+  <div class="cerrarNav" id="cerrarNav">
     <div class="exit" @click="emit('activeNav')">
 
     </div>
     <div id="responsive-nav" class="responsive-nav px-4">
       <div class="container-logo">
-        <img
-          src="../../img/user.png"
-          alt="Foto del usuario"
-          width="64"
-          height="64"
-        />
+        <img src="../../img/user.png" alt="Foto del usuario" width="64" height="64" />
         <div class="">
-          <a class="btn-exit " href="#"
-            ><i
-              @click="emit('activeNav')"
-              class="icon-exit fas fa-times "
-            ></i
-          ></a>
+          <a class="btn-exit " href="#"><i @click="emit('activeNav')" class="icon-exit fas fa-times "></i></a>
         </div>
       </div>
-  
-      <hr/>
+
+      <hr />
       <h2 class="nav-title">Abrahan Pulido</h2>
-      <hr/>
+      <hr />
       <div class="scrollable-list scrollbar-cyan">
         <ul class="list-unstyled">
           <li>
@@ -42,7 +31,7 @@
               <i class="fas fa-envelope"></i> Mensajes
             </button>
           </li>
-          <hr/>
+          <hr />
           <h2 class="nav-title">MekAuto</h2>
           <li>
             <button class="btn-categoria btn-dark">
@@ -97,14 +86,14 @@
           </li>
         </ul>
       </div>
-  
-      <footerPrincipal/>
+
+      <footerPrincipal />
     </div>
   </div>
 </template>
 
 <script setup lang="ts">
-import { ref } from 'vue'; 
+import { ref } from 'vue';
 import footerPrincipal from './footerPrincipal.vue';
 
 const emit = defineEmits(['activeNav'])
@@ -143,7 +132,7 @@ hr {
   opacity: 0.25;
 }
 
-.cerrarNav{
+.cerrarNav {
   position: fixed;
   -webkit-transform: translateX(-100vw);
   -ms-transform: translateX(-100vw);
@@ -154,27 +143,27 @@ hr {
 }
 
 .exit {
-    width: 100vw;
-    height: 100vh;
-    position: fixed;
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
 }
-  
+
 #responsive-nav {
-    position: relative;
-    left: 0;
-    top: 0px;
-    background: #15161d;
-    height: 100vh;
-    max-width: 77%;
-    overflow: hidden;
-    z-index: 2;
-    padding-top: 20px;
+  position: relative;
+  left: 0;
+  top: 0px;
+  background: #15161d;
+  height: 100vh;
+  max-width: 77%;
+  overflow: hidden;
+  z-index: 2;
+  padding-top: 20px;
 
-    /*max-height: 60vh;*/
-    overflow-y: auto;
+  /*max-height: 60vh;*/
+  overflow-y: auto;
 
 
-  }
+}
 
 .responsive-nav {
   display: flex;
@@ -190,68 +179,72 @@ hr {
   img {
     border-radius: 50%;
   }
-  .btn-exit{
-    
+
+  .btn-exit {
+
     .icon-exit {
       display: flex;
-    background-color: #ac2bac;
-    border-color: #ac2bac;
-    height: 2.5rem;
-    width: 2.5rem;
-    /* text-align: center; */
-    border-radius: 50%;
-    color: white;
-    justify-content: center;
-    align-items: center;
-    transition: all .5s;
-    transform-origin: center;
+      background-color: white;
+      border-color: white;
+      color: #0078d4;
+      height: 2.5rem;
+      width: 2.5rem;
+      /* text-align: center; */
+      border-radius: 50%;
+      justify-content: center;
+      align-items: center;
+      transition: all .5s;
+      transform-origin: center;
     }
   }
 }
-.icon-exit:hover{
+
+.icon-exit:hover {
   transform: rotate(180deg);
 }
 
-.nav-title{
+.nav-title {
   color: white;
   font-size: 2rem;
   font-weight: 700;
   line-height: 1.2;
 }
 
-.btn-primary{
+.btn-primary {
   color: #fff;
   background-color: #0062ae;
   border-color: #0062ae;
 }
 
-  .btn-categoria {
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
-    gap: 10px;
-    width: 100%;
-    margin-bottom: 0.25rem;
-    box-sizing: border-box;
-    border-width: 1px;
-    border-style: solid;
-    text-decoration: none;
-    text-overflow: ellipsis;
-    padding: 0.5rem 1.5rem;
-    font-size: .875rem;
-    line-height: 1.3;
-    font-weight: 600;
-    border-radius: 20px;
-    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out,-webkit-box-shadow .15s ease-in-out;  
-  }
-  .btn-dark{
+.btn-categoria {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 10px;
+  width: 100%;
+  margin-bottom: 0.25rem;
+  box-sizing: border-box;
+  border-width: 1px;
+  border-style: solid;
+  text-decoration: none;
+  text-overflow: ellipsis;
+  padding: 0.5rem 1.5rem;
+  font-size: .875rem;
+  line-height: 1.3;
+  font-weight: 600;
+  border-radius: 20px;
+  transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out, -webkit-box-shadow .15s ease-in-out;
+}
+
+.btn-dark {
   color: #fff;
   background-color: #201f1e;
   border-color: #201f1e;
-  :hover{
+
+  :hover {
     background-color: #0c0c0b;
   }
-  }
+}
 
 #navigation {
   background: #fff;
@@ -271,12 +264,14 @@ hr {
     width: 100%;
   }
 }
+
 @media screen and (max-width: 450px) {
   #responsive-nav {
     max-width: 100%;
   }
+
   #responsive-nav::-webkit-scrollbar {
     display: none;
-}
+  }
 }
 </style>

@@ -32,7 +32,7 @@ const props = defineProps({
         font-family: "Segoe UI Web (West European)";
         font-weight: 600;
         margin: 0 0 10px;
-        font-size:1.75rem;
+        font-size:calc(1rem + .9vw);
     }
     .ver-todo{
       color: #0078d4; 
