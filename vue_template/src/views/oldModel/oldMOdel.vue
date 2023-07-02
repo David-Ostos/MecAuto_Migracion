@@ -2233,7 +2233,7 @@
 
 <script setup lang="ts">
 import { ref } from 'vue';
-import NavBar from './container/navBar.vue';
+import NavBar from '../components/navBar.vue';
 
 let show = ref(false);
 
