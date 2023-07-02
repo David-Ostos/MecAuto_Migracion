@@ -67,6 +67,7 @@ header {
   -webkit-transition: all 0.2s linear;
   transition: all 0.2s linear;
 }
+
 .input-header:focus {
   -webkit-transition: all 0.2s linear;
   transition: all 0.2s linear;
@@ -96,15 +97,18 @@ header {
     align-items: center;
   }
 }
+
 .btn-primary {
   color: white;
   background-color: #0078d4;
   border-color: #0078d4;
 }
-.btn-primary:hover{
+
+.btn-primary:hover {
   background-color: #0062ae;
   border-color: #0062ae;
 }
+
 .btn-primary:active {
   background-color: #003e6e;
   border-color: #003e6e;
@@ -112,10 +116,17 @@ header {
 
 .btn-secondary {
   background-color: white;
-    border-color: white;
-    color: #0078d4;
-    border: 2px solid
+  border-color: white;
+  color: #0078d4;
+  border: 2px solid;
 }
+.btn-secondary:hover {
+    background-color: #f3f3f3;
+  }
+
+  .btn-secondary:active {
+    background-color: #aaaaaa;
+  }
 </style>
 
 <template>
@@ -147,6 +158,5 @@ header {
     </div>
   </header>
 
-  <NavBar @activeNav ="activeNav"/>
-
+  <NavBar @activeNav="activeNav" />
 </template>

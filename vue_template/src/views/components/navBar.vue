@@ -198,11 +198,18 @@ hr {
       transform-origin: center;
     }
   }
+
+  .icon-exit:hover {
+    transform: rotate(180deg);
+    background-color: #f3f3f3;
+  }
+
+  .icon-exit:active {
+    transition: all .1s;
+    background-color: #aaaaaa;
+  }
 }
 
-.icon-exit:hover {
-  transform: rotate(180deg);
-}
 
 .nav-title {
   color: white;
