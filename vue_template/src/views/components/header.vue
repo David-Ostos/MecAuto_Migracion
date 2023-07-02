@@ -114,6 +114,7 @@ header {
   background-color: white;
     border-color: white;
     color: #0078d4;
+    border: 2px solid
 }
 </style>
 

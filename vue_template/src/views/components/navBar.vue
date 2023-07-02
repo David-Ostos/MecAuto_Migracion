@@ -187,6 +187,7 @@ hr {
       background-color: white;
       border-color: white;
       color: #0078d4;
+      border: 2px solid;
       height: 2.5rem;
       width: 2.5rem;
       /* text-align: center; */
