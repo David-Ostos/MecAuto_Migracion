@@ -35,6 +35,10 @@
     background: none;
     transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out;
 }
+.links-tipo:hover {
+    background-color: #f5f5f5;
+    border-color: transparent;
+}
 
 .active{
     color: #0078d4;

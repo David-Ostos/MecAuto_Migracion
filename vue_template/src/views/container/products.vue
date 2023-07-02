@@ -70,7 +70,7 @@ const props = defineProps({
   padding: 15px;
   background-color: #FFF;
   text-align: center;
-  z-index: 20;
+  z-index: 3;
   box-sizing: border-box;
 }
 
@@ -117,7 +117,7 @@ const props = defineProps({
   margin-right: -4px;
   background: #FFF;
   color: #E4E7ED;
-  z-index: 10;
+  z-index: 2;
 }
 
 .product .product-body .product-rating>i.fa-star {
@@ -168,7 +168,7 @@ const props = defineProps({
   background: #1e1f29;
   color: #FFF;
   text-transform: uppercase;
-  z-index: 10;
+  z-index: 2;
   opacity: 0;
   visibility: hidden;
   -webkit-transition: 0.2s all;
@@ -195,7 +195,7 @@ const props = defineProps({
   transform: translateY(0%);
   -webkit-transition: 0.2s all;
   transition: 0.2s all;
-  z-index: 2;
+  z-index: 1;
 }
 
 .container-product:hover .add-to-cart {

@@ -20,6 +20,7 @@ header {
   top: 0;
   width: 100%;
   height: 133px;
+  z-index: 4;
 }
 
 .container-header {

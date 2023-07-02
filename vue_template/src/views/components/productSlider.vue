@@ -5,6 +5,11 @@ import TitleProducts from '../container/titleProducts.vue';
 
 const products: any = ref([]);
 
+const props = defineProps({
+  title: String,
+  title2: String
+})
+
 fetch('https://api.escuelajs.co/api/v1/products?offset=0&limit=10')
   .then((res) => res.json())
   .then((data) => {
@@ -15,8 +20,8 @@ fetch('https://api.escuelajs.co/api/v1/products?offset=0&limit=10')
 <template>
   <div>
     <TitleProducts 
-    title="Articulos SS Vistos" 
-    title2="Recientemente" />
+    :title="title" 
+    :title2="title2" />
     <div class="contenerdor">
       <div class="contenedor_scroll px-4">
         <Products

@@ -52,6 +52,16 @@ const router = createRouter({
     path: '/navTipo',
     name: 'navTipo',
     component: () => import('../views/components/navTipo.vue')
+    },
+    {
+      path: '/categorias',
+      name: 'categorias',
+      component: () => import('../views/components/categoriasPrincipales.vue')
+    },
+    {
+      path: '/secciones',
+      name: 'secciones',
+      component: () => import('../views/components/seccionesDestacadas.vue')
     }
   
   ]
