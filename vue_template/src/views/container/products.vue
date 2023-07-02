@@ -247,9 +247,6 @@ const props = defineProps({
   .product{
     width: 80vw;
   }
-  .img {
-    
-  }
 
   @media (min-width: 640px) {
     .product {

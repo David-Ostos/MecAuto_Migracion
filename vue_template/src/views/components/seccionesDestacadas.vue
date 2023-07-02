@@ -125,7 +125,7 @@
 
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 800px) {
 
   .seciones-destacadas {
     flex-direction: column;

@@ -1,9 +1,9 @@
 <template>
     <nav class="nav-tipo-vehiculo">
-        <RouterLink class="links-tipo active" to="/carros"><i class="fas fa-car fa-fw me-1"></i>Carros</RouterLink>
-        <RouterLink class="links-tipo" to="/motos"><i class="fas fa-motorcycle fa-fw me-1"></i>Motos</RouterLink>
-        <RouterLink class="links-tipo" to="/camiones"><i class="fas fa-truck-moving fa-fw me-1"></i>Camiones</RouterLink>
-        <RouterLink class="links-tipo" to="/maritimos"><i class="fas fa-ship fa-fw me-1"></i>Maritimos</RouterLink>
+        <RouterLink class="links-tipo active" to="/"><i class="fas fa-car fa-fw me-1"></i>Carros</RouterLink>
+        <RouterLink class="links-tipo" to="/"><i class="fas fa-motorcycle fa-fw me-1"></i>Motos</RouterLink>
+        <RouterLink class="links-tipo" to="/"><i class="fas fa-truck-moving fa-fw me-1"></i>Camiones</RouterLink>
+        <RouterLink class="links-tipo" to="/"><i class="fas fa-ship fa-fw me-1"></i>Maritimos</RouterLink>
 
     </nav>
 </template>
