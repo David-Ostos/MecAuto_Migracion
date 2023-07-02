@@ -1,56 +1,56 @@
 <template>
-    <div class="seciones-destacadas">
-        <!-- container -->
-        <div class="shop">
-            <div class="shop-img">
-                <img src="../../img/camione/camione2.jpg" alt="">
-            </div>
-            <div class="shop-body">
-                <h3>Camiones<br>Seccion</h3>
-                <a href="#" class="cta-btn">Comprar !!!<i class="fa fa-arrow-circle-right"></i></a>
-            </div>
-        </div>
-        <!-- /shop -->
-
-        <!-- shop -->
-        <div class="shop">
-            <div class="shop-img">
-                <img src="../../img/carro/carro3.jpeg" alt="">
-            </div>
-            <div class="shop-body">
-                <h3>Carros<br>Seccion</h3>
-                <a href="#" class="cta-btn">Comprar !!! <i class="fa fa-arrow-circle-right"></i></a>
-            </div>
-        </div>
-        <!-- /shop -->
-    
-        <!-- shop -->
-        <div class="shop">
-            <div class="shop-img">
-                <img src="../../img/moto/moto3.jpeg" alt="">
-            </div>
-            <div class="shop-body">
-                <h3>Motos<br>Seccion</h3>
-                <a href="#" class="cta-btn">Comprar !!! <i class="fa fa-arrow-circle-right"></i></a>
-            </div>
-        </div>
+  <div class="seciones-destacadas">
+    <!-- container -->
+    <div class="shop">
+      <div class="shop-img">
+        <img src="../../img/camione/camione2.jpg" alt="">
+      </div>
+      <div class="shop-body">
+        <h3>Camiones<br>Seccion</h3>
+        <a href="#" class="cta-btn">Comprar !!!<i class="fa fa-arrow-circle-right"></i></a>
+      </div>
     </div>
+    <!-- /shop -->
 
+    <!-- shop -->
+    <div class="shop">
+      <div class="shop-img">
+        <img src="../../img/carro/carro3.jpeg" alt="">
+      </div>
+      <div class="shop-body">
+        <h3>Carros<br>Seccion</h3>
+        <a href="#" class="cta-btn">Comprar !!! <i class="fa fa-arrow-circle-right"></i></a>
+      </div>
+    </div>
+    <!-- /shop -->
+
+    <!-- shop -->
+    <div class="shop">
+      <div class="shop-img">
+        <img src="../../img/moto/moto3.jpeg" alt="">
+      </div>
+      <div class="shop-body">
+        <h3>Motos<br>Seccion</h3>
+        <a href="#" class="cta-btn">Comprar !!! <i class="fa fa-arrow-circle-right"></i></a>
+      </div>
+    </div>
+  </div>
 </template>
 
 <style scoped lang="scss">
-.seciones-destacadas{
-    display: flex;
-    width: 85vw;
-    justify-content: space-between;
-    gap: 20px;
-    margin: 2rem auto;
+.seciones-destacadas {
+  display: flex;
+  width: 85vw;
+  justify-content: space-between;
+  gap: 20px;
+  margin: 2rem auto;
 }
-.shop{
-    width: 33.333%;
-    position: relative;
-    overflow: hidden;
-    height: fit-content;
+
+.shop {
+  width: 33.333%;
+  position: relative;
+  overflow: hidden;
+  height: fit-content;
 }
 
 .shop:before {
@@ -112,8 +112,8 @@
 .shop .shop-body h3 {
   color: #FFF;
   font-size: 1.75rem;
-        font-weight: 700;
-        line-height: 1.2;
+  font-weight: 700;
+  line-height: 1.2;
 }
 
 .shop .shop-body .cta-btn {
@@ -125,7 +125,18 @@
 
 }
 
+@media screen and (max-width: 500px) {
 
+  .seciones-destacadas {
+    flex-direction: column;
+    width: 100vw;
+    align-items: center;
+  }
+
+  .shop {
+    width: 100%;
+  }
+}
 </style>
 <script setup lang="ts">
 </script>

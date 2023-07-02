@@ -78,6 +78,21 @@
   background-color: #003e6e;
   border-color: #003e6e;
 }
+@media screen and (max-width: 500px) {
+  .form-select{
+    width: 16%;
+    padding: 2px 2px;
+    font-size: 10px;
+    background-position: center right 1px;
+    background-size: 9px;
+}
+.btn-filtro {
+    padding: 3px 3px;
+    margin: 0;
+    width: 16%;
+    font-size: 10px;
+}  
+}
 </style>
 
 <template>
