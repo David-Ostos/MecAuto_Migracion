@@ -23,9 +23,10 @@ const props = defineProps({
   .contenedor{
     display: flex;
     justify-content: space-between;
-    padding: 1rem;
+    padding: 1rem 1rem 40px 1rem;
     max-width: 86vw;
     margin: auto;
+ 
   }
     .title-product{
         color: black;

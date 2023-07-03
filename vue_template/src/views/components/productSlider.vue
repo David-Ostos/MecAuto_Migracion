@@ -53,7 +53,7 @@ fetch('https://api.escuelajs.co/api/v1/products?offset=0&limit=10')
   display: flex;
   width: fit-content;
   gap: 2rem;
-  padding-bottom: 5rem;
+  padding-bottom: 40px;
   position: relative;
 }
 </style>

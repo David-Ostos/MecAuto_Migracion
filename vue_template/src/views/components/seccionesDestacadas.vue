@@ -42,8 +42,8 @@
   display: flex;
   width: 85vw;
   justify-content: space-between;
-  gap: 20px;
-  margin: 2rem auto;
+  gap: 40px;
+  margin: 43px auto;
 }
 
 .shop {
@@ -95,10 +95,12 @@
   transition: 0.2s all;
 }
 
+
 .shop:hover .shop-img>img {
   -webkit-transform: scale(1.1);
   -ms-transform: scale(1.1);
   transform: scale(1.1);
+  transform: scaleX(-1);
 }
 
 .shop .shop-body {
